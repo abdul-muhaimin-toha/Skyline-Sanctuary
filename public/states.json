@@ -1,0 +1,218 @@
+[
+  {
+    "image": "residential1.jpg",
+    "estate_title": "Modern Family Home",
+    "id": 1,
+    "segment_name": "Family Homes",
+    "price": 500000,
+    "status": "sale",
+    "area": 2500,
+    "location": "Los Angeles, California",
+    "latitude": 34.052235,
+    "longitude": -118.243683,
+    "short_description": "A beautifully designed modern family home offering spacious interiors and stunning views.",
+    "detailed_description": "This modern family home is architecturally designed to offer spacious living areas and abundant natural light. With a contemporary aesthetic and high-quality finishes throughout, this residence boasts a large living room, four bedrooms, three bathrooms, and a private swimming pool. Enjoy the convenience of urban living with the tranquility of a picturesque location.",
+    "facilities": [
+      "4 bedrooms",
+      "3 bathrooms",
+      "large living room",
+      "swimming pool"
+    ]
+  },
+  {
+    "image": "residential2.jpg",
+    "estate_title": "Luxury Villa",
+    "id": 2,
+    "segment_name": "Luxury Estates",
+    "price": 1200000,
+    "status": "sale",
+    "area": 4000,
+    "location": "Miami, Florida",
+    "latitude": 25.7617,
+    "longitude": -80.1918,
+    "short_description": "An exquisite luxury villa offering panoramic ocean views and exceptional comfort.",
+    "detailed_description": "Step into luxury with this stunning villa, where every detail has been meticulously crafted for the discerning buyer. From the grand entrance to the landscaped gardens, this home exudes elegance. With five spacious bedrooms, five bathrooms, a fully equipped kitchen, home theater, and gym, this villa provides the ultimate in luxury living. Wake up to breathtaking sunrises over the ocean and unwind in the evening with spectacular sunset views.",
+    "facilities": [
+      "5 bedrooms",
+      "5 bathrooms",
+      "spacious kitchen",
+      "home theater",
+      "gym"
+    ]
+  },
+  {
+    "image": "residential3.jpg",
+    "estate_title": "Cozy Suburban House",
+    "id": 3,
+    "segment_name": "Suburban Residences",
+    "price": 300000,
+    "status": "sale",
+    "area": 1800,
+    "location": "Dallas, Texas",
+    "latitude": 32.7767,
+    "longitude": -96.797,
+    "short_description": "A charming suburban house perfect for a small family.",
+    "detailed_description": "Welcome to this charming suburban house nestled in a quiet neighborhood of Dallas, Texas. With its cozy atmosphere and functional layout, this home is ideal for a small family. Enjoy sunny afternoons in the backyard garden or relax in the spacious living room. Featuring three bedrooms, two bathrooms, and a garage, this home offers comfort and convenience.",
+    "facilities": ["3 bedrooms", "2 bathrooms", "backyard garden", "garage"]
+  },
+  {
+    "image": "residential4.jpg",
+    "estate_title": "Townhouse Retreat",
+    "id": 4,
+    "segment_name": "Urban Townhouses",
+    "price": 400000,
+    "status": "rent",
+    "area": 2200,
+    "location": "New York City, New York",
+    "latitude": 40.7128,
+    "longitude": -74.006,
+    "short_description": "Stylish townhouse in the heart of New York City.",
+    "detailed_description": "Experience urban living at its finest in this stylish townhouse located in the heart of New York City. With its sleek design and modern amenities, this home offers the perfect retreat from the hustle and bustle of city life. Featuring three bedrooms, two and a half bathrooms, a rooftop terrace, and a fitness center, this townhouse provides the ultimate in luxury and convenience.",
+    "facilities": [
+      "3 bedrooms",
+      "2.5 bathrooms",
+      "rooftop terrace",
+      "fitness center"
+    ]
+  },
+  {
+    "image": "residential5.jpg",
+    "estate_title": "Riverside Mansion",
+    "id": 5,
+    "segment_name": "Waterfront Properties",
+    "price": 3500000,
+    "status": "sale",
+    "area": 6000,
+    "location": "Seattle, Washington",
+    "latitude": 47.6062,
+    "longitude": -122.3321,
+    "short_description": "A grand mansion along the riverside.",
+    "detailed_description": "Indulge in luxury living with this grand mansion nestled along the scenic riverside in Seattle, Washington. This architectural masterpiece offers unparalleled craftsmanship and attention to detail. With seven bedrooms, seven bathrooms, an infinity pool, tennis court, and guest house, this estate provides the perfect blend of elegance and functionality.",
+    "facilities": [
+      "7 bedrooms",
+      "7 bathrooms",
+      "infinity pool",
+      "tennis court",
+      "guest house"
+    ]
+  },
+  {
+    "image": "residential6.jpg",
+    "estate_title": "Mountain View Retreat",
+    "id": 6,
+    "segment_name": "Mountain Escapes",
+    "price": 800000,
+    "status": "sale",
+    "area": 3000,
+    "location": "Denver, Colorado",
+    "latitude": 39.7392,
+    "longitude": -104.9903,
+    "short_description": "An idyllic retreat with breathtaking mountain views.",
+    "detailed_description": "Escape to this idyllic retreat nestled in the picturesque mountains of Denver, Colorado. Wake up to breathtaking views of snow-capped peaks and crisp mountain air. With four bedrooms, three and a half bathrooms, a wrap-around deck, hot tub, and fireplace, this mountain retreat offers the perfect blend of relaxation and adventure.",
+    "facilities": [
+      "4 bedrooms",
+      "3.5 bathrooms",
+      "wrap-around deck",
+      "hot tub",
+      "fireplace"
+    ]
+  },
+  {
+    "image": "residential7.jpg",
+    "estate_title": "Elegant Penthouse",
+    "id": 7,
+    "segment_name": "City Penthouses",
+    "price": 1800000,
+    "status": "sale",
+    "area": 3500,
+    "location": "Chicago, Illinois",
+    "latitude": 41.8781,
+    "longitude": -87.6298,
+    "short_description": "Sophisticated penthouse living in the heart of Chicago.",
+    "detailed_description": "Experience sophisticated city living in this elegant penthouse located in the vibrant city of Chicago, Illinois. With floor-to-ceiling windows offering stunning skyline views, this penthouse boasts three bedrooms, three and a half bathrooms, a private terrace, and concierge service. Enjoy the convenience of urban living with the luxury of a private retreat.",
+    "facilities": [
+      "3 bedrooms",
+      "3.5 bathrooms",
+      "floor-to-ceiling windows",
+      "private terrace",
+      "concierge service"
+    ]
+  },
+  {
+    "image": "residential8.jpg",
+    "estate_title": "Lakefront Retreat",
+    "id": 8,
+    "segment_name": "Lakefront Properties",
+    "price": 900000,
+    "status": "sale",
+    "area": 2800,
+    "location": "Orlando, Florida",
+    "latitude": 28.5383,
+    "longitude": -81.3787,
+    "short_description": "Tranquil lakefront property with modern amenities.",
+    "detailed_description": "Escape to this tranquil lakefront property located in Orlando, Florida. Surrounded by serene lake views, this retreat offers four bedrooms, three bathrooms, a private dock, boathouse, and fire pit. Whether you enjoy boating on the lake or relaxing by the fire, this lakefront property provides the perfect setting for year-round enjoyment.",
+    "facilities": ["4 bedrooms", "3 bathrooms", "dock", "boathouse", "fire pit"]
+  },
+  {
+    "image": "residential9.jpg",
+    "estate_title": "Historic Mansion",
+    "id": 9,
+    "segment_name": "Historic Homes",
+    "price": 2500000,
+    "status": "sale",
+    "area": 5000,
+    "location": "Boston, Massachusetts",
+    "latitude": 42.3601,
+    "longitude": -71.0589,
+    "short_description": "Exquisite historic mansion meticulously restored to its former glory.",
+    "detailed_description": "Step back in time with this exquisite historic mansion located in the historic district of Boston, Massachusetts. Meticulously restored to its former glory, this mansion boasts six bedrooms, six bathrooms, a grand foyer, ballroom, and library. Immerse yourself in the rich history and timeless elegance of this iconic property.",
+    "facilities": [
+      "6 bedrooms",
+      "6 bathrooms",
+      "grand foyer",
+      "ballroom",
+      "library"
+    ]
+  },
+  {
+    "image": "residential11.jpg",
+    "estate_title": "Oceanfront Condo",
+    "id": 11,
+    "segment_name": "Beachfront Condos",
+    "price": 750000,
+    "status": "sale",
+    "area": 2000,
+    "location": "San Diego, California",
+    "latitude": 32.7157,
+    "longitude": -117.1611,
+    "short_description": "Luxurious oceanfront condo with stunning views.",
+    "detailed_description": "Indulge in coastal living with this luxurious oceanfront condo located in San Diego, California. Offering panoramic views of the Pacific Ocean, this condo features three bedrooms, two bathrooms, a gourmet kitchen, and a spacious balcony. Enjoy direct access to the beach and resort-style amenities including a pool, spa, and fitness center.",
+    "facilities": [
+      "3 bedrooms",
+      "2 bathrooms",
+      "oceanfront balcony",
+      "pool",
+      "spa"
+    ]
+  },
+  {
+    "image": "residential12.jpg",
+    "estate_title": "Mountain Cabin Retreat",
+    "id": 12,
+    "segment_name": "Mountain Getaways",
+    "price": 600000,
+    "status": "sale",
+    "area": 1800,
+    "location": "Asheville, North Carolina",
+    "latitude": 35.5951,
+    "longitude": -82.5515,
+    "short_description": "Cozy mountain cabin retreat surrounded by nature.",
+    "detailed_description": "Escape to the tranquility of the mountains with this cozy cabin retreat nestled in Asheville, North Carolina. Surrounded by lush forests and scenic vistas, this cabin offers two bedrooms, two bathrooms, a stone fireplace, and a spacious deck for outdoor living. Enjoy hiking trails, fishing streams, and wildlife right outside your door.",
+    "facilities": [
+      "2 bedrooms",
+      "2 bathrooms",
+      "stone fireplace",
+      "spacious deck"
+    ]
+  }
+]

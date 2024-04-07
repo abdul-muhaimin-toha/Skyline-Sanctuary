@@ -7,7 +7,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 const HeroSection = () => {
   return (
-    <section className="relative">
+    <section className="relative z-30">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}

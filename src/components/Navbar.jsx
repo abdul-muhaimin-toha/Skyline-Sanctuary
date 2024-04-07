@@ -3,15 +3,15 @@ import logo from "../assets/website-logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="sticky left-0 top-0 z-50">
+    <nav className="sticky left-0 top-0 z-50 bg-white px-2">
       <div className="mx-auto max-w-screen-2xl">
-        <div className="navbar bg-white bg-opacity-85">
+        <div className="navbar  bg-opacity-85">
           <div className="navbar-start">
             <div className="dropdown">
               <div
                 tabIndex={0}
                 role="button"
-                className="btn btn-ghost bg-transparent hover:bg-transparent lg:hidden"
+                className="btn btn-ghost  bg-transparent pl-0  hover:bg-transparent lg:hidden"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
