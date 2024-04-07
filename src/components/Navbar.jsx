@@ -3,7 +3,7 @@ import logo from "../assets/website-logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="sticky left-0 top-0 z-50 bg-white px-2">
+    <nav className="sticky left-0 top-0 z-50 bg-white  p-2">
       <div className="mx-auto max-w-screen-2xl">
         <div className="navbar  bg-opacity-85">
           <div className="navbar-start">

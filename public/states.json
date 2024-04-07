@@ -173,46 +173,5 @@
       "ballroom",
       "library"
     ]
-  },
-  {
-    "image": "residential11.jpg",
-    "estate_title": "Oceanfront Condo",
-    "id": 11,
-    "segment_name": "Beachfront Condos",
-    "price": 750000,
-    "status": "sale",
-    "area": 2000,
-    "location": "San Diego, California",
-    "latitude": 32.7157,
-    "longitude": -117.1611,
-    "short_description": "Luxurious oceanfront condo with stunning views.",
-    "detailed_description": "Indulge in coastal living with this luxurious oceanfront condo located in San Diego, California. Offering panoramic views of the Pacific Ocean, this condo features three bedrooms, two bathrooms, a gourmet kitchen, and a spacious balcony. Enjoy direct access to the beach and resort-style amenities including a pool, spa, and fitness center.",
-    "facilities": [
-      "3 bedrooms",
-      "2 bathrooms",
-      "oceanfront balcony",
-      "pool",
-      "spa"
-    ]
-  },
-  {
-    "image": "residential12.jpg",
-    "estate_title": "Mountain Cabin Retreat",
-    "id": 12,
-    "segment_name": "Mountain Getaways",
-    "price": 600000,
-    "status": "sale",
-    "area": 1800,
-    "location": "Asheville, North Carolina",
-    "latitude": 35.5951,
-    "longitude": -82.5515,
-    "short_description": "Cozy mountain cabin retreat surrounded by nature.",
-    "detailed_description": "Escape to the tranquility of the mountains with this cozy cabin retreat nestled in Asheville, North Carolina. Surrounded by lush forests and scenic vistas, this cabin offers two bedrooms, two bathrooms, a stone fireplace, and a spacious deck for outdoor living. Enjoy hiking trails, fishing streams, and wildlife right outside your door.",
-    "facilities": [
-      "2 bedrooms",
-      "2 bathrooms",
-      "stone fireplace",
-      "spacious deck"
-    ]
   }
 ]
