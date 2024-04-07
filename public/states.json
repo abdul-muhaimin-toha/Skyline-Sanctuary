@@ -1,6 +1,6 @@
 [
   {
-    "image": "residential1.jpg",
+    "image": "https://ibb.co/RY2Jx73",
     "estate_title": "Modern Family Home",
     "id": 1,
     "segment_name": "Family Homes",
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "image": "residential2.jpg",
+    "image": "https://ibb.co/D7sBsz5",
     "estate_title": "Luxury Villa",
     "id": 2,
     "segment_name": "Luxury Estates",
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "image": "residential3.jpg",
+    "image": "https://ibb.co/JBygK9b",
     "estate_title": "Cozy Suburban House",
     "id": 3,
     "segment_name": "Suburban Residences",
@@ -56,7 +56,7 @@
     "facilities": ["3 bedrooms", "2 bathrooms", "backyard garden", "garage"]
   },
   {
-    "image": "residential4.jpg",
+    "image": "https://ibb.co/p3ybrdX",
     "estate_title": "Townhouse Retreat",
     "id": 4,
     "segment_name": "Urban Townhouses",
@@ -76,7 +76,7 @@
     ]
   },
   {
-    "image": "residential5.jpg",
+    "image": "https://ibb.co/pjw6W4C",
     "estate_title": "Riverside Mansion",
     "id": 5,
     "segment_name": "Waterfront Properties",
@@ -97,7 +97,7 @@
     ]
   },
   {
-    "image": "residential6.jpg",
+    "image": "https://ibb.co/GWT5JzZ",
     "estate_title": "Mountain View Retreat",
     "id": 6,
     "segment_name": "Mountain Escapes",
@@ -118,7 +118,7 @@
     ]
   },
   {
-    "image": "residential7.jpg",
+    "image": "https://ibb.co/ZNH3HBb",
     "estate_title": "Elegant Penthouse",
     "id": 7,
     "segment_name": "City Penthouses",
@@ -139,7 +139,7 @@
     ]
   },
   {
-    "image": "residential8.jpg",
+    "image": "https://ibb.co/6vCQKR0",
     "estate_title": "Lakefront Retreat",
     "id": 8,
     "segment_name": "Lakefront Properties",
@@ -154,7 +154,7 @@
     "facilities": ["4 bedrooms", "3 bathrooms", "dock", "boathouse", "fire pit"]
   },
   {
-    "image": "residential9.jpg",
+    "image": "https://ibb.co/tZGbJ7K",
     "estate_title": "Historic Mansion",
     "id": 9,
     "segment_name": "Historic Homes",
