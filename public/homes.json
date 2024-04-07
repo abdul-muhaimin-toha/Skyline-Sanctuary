@@ -1,11 +1,11 @@
 [
   {
-    "image": "https://ibb.co/RY2Jx73",
+    "image": "https://i.ibb.co/DYN89RL/brian-babb-Xbw-Hrt87m-Q0-unsplash.jpg",
     "estate_title": "Modern Family Home",
     "id": 1,
     "segment_name": "Family Homes",
     "price": 500000,
-    "status": "sale",
+    "status": "Sale",
     "area": 2500,
     "location": "Los Angeles, California",
     "latitude": 34.052235,
@@ -20,12 +20,12 @@
     ]
   },
   {
-    "image": "https://ibb.co/D7sBsz5",
+    "image": "https://i.ibb.co/DkkYdjL/evelyn-paris-XJn-P4-L958ds-unsplash.jpg",
     "estate_title": "Luxury Villa",
     "id": 2,
     "segment_name": "Luxury Estates",
     "price": 1200000,
-    "status": "sale",
+    "status": "Rent",
     "area": 4000,
     "location": "Miami, Florida",
     "latitude": 25.7617,
@@ -41,12 +41,12 @@
     ]
   },
   {
-    "image": "https://ibb.co/JBygK9b",
+    "image": "https://i.ibb.co/8s2Nxn5/ronnie-george-9g-Gv-NWBe-Oq4-unsplash.jpg",
     "estate_title": "Cozy Suburban House",
     "id": 3,
     "segment_name": "Suburban Residences",
     "price": 300000,
-    "status": "sale",
+    "status": "Sale",
     "area": 1800,
     "location": "Dallas, Texas",
     "latitude": 32.7767,
@@ -56,12 +56,12 @@
     "facilities": ["3 bedrooms", "2 bathrooms", "backyard garden", "garage"]
   },
   {
-    "image": "https://ibb.co/p3ybrdX",
+    "image": "https://i.ibb.co/s6pHphH/ronnie-george-z11gb-Bo13ro-unsplash.jpg",
     "estate_title": "Townhouse Retreat",
     "id": 4,
     "segment_name": "Urban Townhouses",
     "price": 400000,
-    "status": "rent",
+    "status": "Rent",
     "area": 2200,
     "location": "New York City, New York",
     "latitude": 40.7128,
@@ -76,12 +76,12 @@
     ]
   },
   {
-    "image": "https://ibb.co/pjw6W4C",
+    "image": "https://i.ibb.co/1GQYsRH/r-architecture-GGupkre-Kwx-A-unsplash.jpg",
     "estate_title": "Riverside Mansion",
     "id": 5,
     "segment_name": "Waterfront Properties",
     "price": 3500000,
-    "status": "sale",
+    "status": "Rent",
     "area": 6000,
     "location": "Seattle, Washington",
     "latitude": 47.6062,
@@ -97,12 +97,12 @@
     ]
   },
   {
-    "image": "https://ibb.co/GWT5JzZ",
+    "image": "https://i.ibb.co/R3yDSRX/r-architecture-2g-Dwl-Iim3-Uw-unsplash.jpg",
     "estate_title": "Mountain View Retreat",
     "id": 6,
     "segment_name": "Mountain Escapes",
     "price": 800000,
-    "status": "sale",
+    "status": "Rent",
     "area": 3000,
     "location": "Denver, Colorado",
     "latitude": 39.7392,
@@ -118,12 +118,12 @@
     ]
   },
   {
-    "image": "https://ibb.co/ZNH3HBb",
+    "image": "https://i.ibb.co/9GwJwbd/frames-for-your-heart-2d4l-AQAlb-DA-unsplash.jpg",
     "estate_title": "Elegant Penthouse",
     "id": 7,
     "segment_name": "City Penthouses",
     "price": 1800000,
-    "status": "sale",
+    "status": "Sale",
     "area": 3500,
     "location": "Chicago, Illinois",
     "latitude": 41.8781,
@@ -139,12 +139,12 @@
     ]
   },
   {
-    "image": "https://ibb.co/6vCQKR0",
+    "image": "https://i.ibb.co/JxJZYRj/evelyn-paris-XJn-P4-L958ds-unsplash.jpg",
     "estate_title": "Lakefront Retreat",
     "id": 8,
     "segment_name": "Lakefront Properties",
     "price": 900000,
-    "status": "sale",
+    "status": "Sale",
     "area": 2800,
     "location": "Orlando, Florida",
     "latitude": 28.5383,
@@ -154,12 +154,12 @@
     "facilities": ["4 bedrooms", "3 bathrooms", "dock", "boathouse", "fire pit"]
   },
   {
-    "image": "https://ibb.co/tZGbJ7K",
+    "image": "https://i.ibb.co/8zCj7Ws/digital-marketing-agency-ntwrk-g39p1k-Djv-SY-unsplash.jpg",
     "estate_title": "Historic Mansion",
     "id": 9,
     "segment_name": "Historic Homes",
     "price": 2500000,
-    "status": "sale",
+    "status": "Sale",
     "area": 5000,
     "location": "Boston, Massachusetts",
     "latitude": 42.3601,
