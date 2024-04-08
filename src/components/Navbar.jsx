@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/website-logo.png";
 
 const Navbar = () => {
@@ -35,39 +35,42 @@ const Navbar = () => {
                 <NavLink className="transition duration-200 hover:text-blue-800">
                   Home
                 </NavLink>
-                <NavLink className="transition duration-200 hover:text-blue-800 ">
-                  Profile
-                </NavLink>
-                <NavLink className="transition duration-200 hover:text-blue-800 ">
-                  Profile Update
-                </NavLink>
               </ul>
             </div>
-            <a className="border-none md:btn hover:bg-transparent  md:bg-transparent ">
+            <Link
+              to="/"
+              className="border-none md:btn hover:bg-transparent  md:bg-transparent "
+            >
               <img
                 src={logo}
                 alt="Skyline Sanctuary Logo"
                 className="max-w-28 md:max-w-36"
               />
-            </a>
+            </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal space-x-6 px-1 text-base font-bold text-primary md:space-x-8">
-              <NavLink className="transition duration-200 hover:text-blue-800">
+              <NavLink
+                to="/"
+                className="transition duration-200 hover:text-blue-800"
+              >
                 Home
-              </NavLink>
-              <NavLink className="transition duration-200 hover:text-blue-800">
-                Profile
-              </NavLink>
-              <NavLink className="transition duration-200 hover:text-blue-800">
-                Profile Update
               </NavLink>
             </ul>
           </div>
-          <div className="navbar-end">
-            <a className="rounded-md bg-primary px-5 py-3 font-bold text-white transition duration-200 hover:bg-blue-800">
+          <div className="navbar-end gap-3">
+            <Link
+              to="/registration"
+              className="rounded-md bg-blue-700 px-5 py-3 font-bold text-white transition duration-200 hover:bg-blue-800"
+            >
+              Registration
+            </Link>
+            <Link
+              to="/login"
+              className="rounded-md bg-primary px-5 py-3 font-bold text-white transition duration-200 hover:bg-blue-800"
+            >
               Login
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,12 +1,34 @@
+import { NavLink } from "react-router-dom";
+
 const FooterSection = () => {
   return (
     <footer>
       <div className="footer footer-center rounded bg-base-200 p-10 text-base-content">
         <nav className="grid grid-flow-col gap-4">
-          <a className="link-hover link">About us</a>
-          <a className="link-hover link">Contact</a>
-          <a className="link-hover link">Jobs</a>
-          <a className="link-hover link">Press kit</a>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `link-hover link ${isActive && "text-primary"}`
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/registration"
+            className={({ isActive }) =>
+              `link-hover link ${isActive && "text-primary"}`
+            }
+          >
+            Registration
+          </NavLink>
+          <NavLink
+            to="/login"
+            className={({ isActive }) =>
+              `link-hover link ${isActive && "text-primary"}`
+            }
+          >
+            Login
+          </NavLink>
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">

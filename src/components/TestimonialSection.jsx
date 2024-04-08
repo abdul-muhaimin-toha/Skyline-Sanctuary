@@ -16,7 +16,7 @@ const TestimonialSection = () => {
         title="Client Testimonials"
         subTitle="Discover What Our Satisfied Customers Have to Say About Their Real Estate Journey with Us"
       />
-      <div className="mx-auto max-w-7xl px-3 lg:px-6">
+      <div className="mx-auto max-w-screen-2xl px-3 lg:px-6">
         <div className=" grid grid-cols-1 gap-6 py-4 md:grid-cols-2 md:py-10 lg:grid-cols-3">
           {testimonials.map((testimonial) => (
             <TestimonialCard key={testimonial.id} testimonial={testimonial} />
