@@ -2,6 +2,7 @@ import HeroSection from "../components/HeroSection";
 import NewsLetter from "../components/NewsLetter";
 import SingleFamilyHomeSection from "../components/SingleFamilyHomeSection";
 import { useLoaderData } from "react-router-dom";
+import TestimonialSection from "../components/TestimonialSection";
 
 const HomePage = () => {
   const homes = useLoaderData();
@@ -9,6 +10,7 @@ const HomePage = () => {
     <>
       <HeroSection />
       <SingleFamilyHomeSection homes={homes} />
+      <TestimonialSection />
       <NewsLetter />
     </>
   );

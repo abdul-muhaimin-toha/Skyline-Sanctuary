@@ -16,7 +16,8 @@
       "4 bedrooms",
       "3 bathrooms",
       "large living room",
-      "swimming pool"
+      "swimming pool",
+      "gym"
     ]
   },
   {
@@ -51,9 +52,16 @@
     "location": "Dallas, Texas",
     "latitude": 32.7767,
     "longitude": -96.797,
-    "short_description": "A charming suburban house perfect for a small family.",
+    "short_description": "A charming suburban house with ocean views, perfect for a small family.",
     "detailed_description": "Welcome to this charming suburban house nestled in a quiet neighborhood of Dallas, Texas. With its cozy atmosphere and functional layout, this home is ideal for a small family. Enjoy sunny afternoons in the backyard garden or relax in the spacious living room. Featuring three bedrooms, two bathrooms, and a garage, this home offers comfort and convenience.",
-    "facilities": ["3 bedrooms", "2 bathrooms", "backyard garden", "garage"]
+    "facilities": [
+      "3 bedrooms",
+      "2 bathrooms",
+      "backyard garden",
+      "garage",
+      "home theater",
+      "gym"
+    ]
   },
   {
     "image": "https://i.ibb.co/s6pHphH/ronnie-george-z11gb-Bo13ro-unsplash.jpg",
@@ -128,7 +136,7 @@
     "location": "Chicago, Illinois",
     "latitude": 41.8781,
     "longitude": -87.6298,
-    "short_description": "Sophisticated penthouse living in the heart of Chicago.",
+    "short_description": "Sophisticated and beautiful penthouse living in the heart of Chicago.",
     "detailed_description": "Experience sophisticated city living in this elegant penthouse located in the vibrant city of Chicago, Illinois. With floor-to-ceiling windows offering stunning skyline views, this penthouse boasts three bedrooms, three and a half bathrooms, a private terrace, and concierge service. Enjoy the convenience of urban living with the luxury of a private retreat.",
     "facilities": [
       "3 bedrooms",
@@ -149,9 +157,17 @@
     "location": "Orlando, Florida",
     "latitude": 28.5383,
     "longitude": -81.3787,
-    "short_description": "Tranquil lakefront property with modern amenities.",
+    "short_description": "Tranquil lakefront property with modern amenities along the riverside.",
     "detailed_description": "Escape to this tranquil lakefront property located in Orlando, Florida. Surrounded by serene lake views, this retreat offers four bedrooms, three bathrooms, a private dock, boathouse, and fire pit. Whether you enjoy boating on the lake or relaxing by the fire, this lakefront property provides the perfect setting for year-round enjoyment.",
-    "facilities": ["4 bedrooms", "3 bathrooms", "dock", "boathouse", "fire pit"]
+    "facilities": [
+      "4 bedrooms",
+      "3 bathrooms",
+      "dock",
+      "boathouse",
+      "fire pit",
+      "private terrace",
+      "concierge service"
+    ]
   },
   {
     "image": "https://i.ibb.co/8zCj7Ws/digital-marketing-agency-ntwrk-g39p1k-Djv-SY-unsplash.jpg",

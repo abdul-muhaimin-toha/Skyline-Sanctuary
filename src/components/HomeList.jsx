@@ -6,7 +6,7 @@ const HomeList = ({ homes }) => {
   return (
     <section>
       <div className="mx-auto max-w-screen-2xl px-2">
-        <div className="mb-20 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mb-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {homes.slice(0, viewAll ? homes.length : 6).map((home) => (
             <HomeCard key={home.id} home={home} />
           ))}
