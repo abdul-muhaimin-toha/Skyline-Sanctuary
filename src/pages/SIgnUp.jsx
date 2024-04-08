@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { updateProfile } from "firebase/auth";
+import { Helmet } from "react-helmet";
 
 const SignUp = () => {
   const [isPassVisible, setIsPassVisible] = useState(false);
@@ -116,6 +117,9 @@ const SignUp = () => {
 
   return (
     <section className=" bg-hero-slider-2 bg-cover">
+      <Helmet>
+        <title>Skyline Sactuary - Sign Up</title>
+      </Helmet>
       <div className="bg-gradient-to-b from-[#22222283] to-[#2222226c] ">
         <div className="mx-auto max-w-screen-2xl px-6 md:px-12">
           <div className="flex min-h-[calc(100vh-305px)] items-center justify-between gap-10 py-20">

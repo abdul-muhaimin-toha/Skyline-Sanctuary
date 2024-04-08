@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const ErrorPage = () => {
   return (
     <section className=" flex min-h-[calc(100vh-305px)] items-center justify-center bg-cover bg-center ">
+      <Helmet>
+        <title>SkyLine Sactuary - Error Page</title>
+      </Helmet>
       <div className="mx-auto max-w-screen-2xl p-1 lg:py-8">
         <div className=" flex flex-col items-center justify-center py-28 ">
           <h2 className="play-fair-display mb-4 text-center text-3xl font-bold text-primary md:text-5xl md:font-extrabold">

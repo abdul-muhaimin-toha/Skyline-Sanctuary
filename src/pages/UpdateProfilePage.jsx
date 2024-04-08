@@ -4,6 +4,7 @@ import useAuth from "../hooks/useAuth";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 
 const UpdateProfilePage = () => {
   const [isPassVisible, setIsPassVisible] = useState(false);
@@ -46,6 +47,9 @@ const UpdateProfilePage = () => {
 
   return (
     <section className="bg-hero-slider-2 bg-cover">
+      <Helmet>
+        <title>SkyLine Sactuary - Update Profile</title>
+      </Helmet>
       <div className="bg-gradient-to-b from-[#22222283] to-[#2222226c] ">
         <div className="mx-auto max-w-screen-2xl px-6 md:px-12">
           <div className="flex min-h-[calc(100vh-305px)] items-center justify-between gap-10 py-20">

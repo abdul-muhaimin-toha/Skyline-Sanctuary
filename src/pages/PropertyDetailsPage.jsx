@@ -5,6 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useLoaderData, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 const PropertyDetailsPage = () => {
   const homes = useLoaderData();
@@ -32,6 +33,9 @@ const PropertyDetailsPage = () => {
 
   return (
     <section>
+      <Helmet>
+        <title>SkyLine Sactuary - Property Details</title>
+      </Helmet>
       <div className="mx-auto max-w-screen-2xl p-6 py-12">
         <div className="flex flex-col items-start gap-6 lg:flex-row">
           <div className="flex flex-col lg:w-1/2">
