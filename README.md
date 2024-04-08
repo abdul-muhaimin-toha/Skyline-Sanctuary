@@ -15,7 +15,7 @@
 
 - You can get registered with your email or social media accounts
 
--This website is mobile, tablet and big screen friendly
+- This website is mobile, tablet and big screen friendly
 
 - The firebase authentication is secured by envirnmental variable
 
