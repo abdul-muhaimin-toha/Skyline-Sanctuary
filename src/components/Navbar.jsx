@@ -135,6 +135,14 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end">
+            {user && (
+              <button
+                onClick={handleLogOut}
+                className="mr-6 rounded  bg-primary p-2 font-bold text-white hover:bg-primary hover:text-white"
+              >
+                Log out
+              </button>
+            )}
             {user ? (
               <div className=" dropdown dropdown-end rounded-full outline outline-4 outline-primary">
                 <img
@@ -142,6 +150,7 @@ const Navbar = () => {
                   role="button"
                   src={user.photoURL ? user.photoURL : userDefault}
                   alt=""
+                  title={user.displayName}
                   className="h-8 w-8 cursor-pointer rounded-full bg-secondary "
                 />
                 <ul
