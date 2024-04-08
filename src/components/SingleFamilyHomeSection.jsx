@@ -1,5 +1,6 @@
 import HomeList from "./HomeList";
 import SectionHeader from "./SectionHeader";
+import PropTypes from "prop-types";
 
 const SingleFamilyHomeSection = ({ homes }) => {
   return (
@@ -11,6 +12,10 @@ const SingleFamilyHomeSection = ({ homes }) => {
       <HomeList homes={homes} />
     </section>
   );
+};
+
+SingleFamilyHomeSection.propTypes = {
+  homes: PropTypes.array.isRequired,
 };
 
 export default SingleFamilyHomeSection;

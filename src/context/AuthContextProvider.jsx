@@ -11,6 +11,7 @@ import {
   updateProfile,
 } from "firebase/auth";
 import auth from "../firebase/firebase.config";
+import PropTypes from "prop-types";
 
 const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
@@ -29,8 +30,6 @@ const AuthContextProvider = ({ children }) => {
     });
     return () => unsubscribe();
   }, []);
-
-  console.log(user);
 
   const createNewUser = (email, password) => {
     setIsLoading(true);
@@ -79,6 +78,10 @@ const AuthContextProvider = ({ children }) => {
   return (
     <AuthContext.Provider value={authValue}>{children}</AuthContext.Provider>
   );
+};
+
+AuthContextProvider.propTypes = {
+  children: PropTypes.node,
 };
 
 export default AuthContextProvider;

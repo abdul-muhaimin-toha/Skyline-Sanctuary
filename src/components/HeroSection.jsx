@@ -52,13 +52,13 @@ const HeroSection = () => {
       </Swiper>
       <div className="absolute left-1/2 top-1/2 z-50 flex w-full -translate-x-1/2 -translate-y-1/2  justify-center  p-10">
         <div className="flex max-w-full flex-col  text-center md:max-w-2xl">
-          <h1 className=" mb-6 text-4xl font-bold capitalize text-white md:text-5xl lg:text-6xl">
+          <h1 className="mb-6 text-4xl font-bold capitalize text-white md:text-5xl lg:text-6xl">
             The easiest way to find your dream home
           </h1>
-          <p className=" mb-6 text-sm text-white md:text-base">
-            We're the real estate experts who can help you find the perfect
+          <p className="mb-6 text-sm text-white md:text-base">
+            We are the real estate experts who can help you find the perfect
             place to call home. We know the real estate market inside and out,
-            and we're committed to helping you find the right home for your
+            and we are committed to helping you find the right home for your
             needs and budget.
           </p>
           <Link

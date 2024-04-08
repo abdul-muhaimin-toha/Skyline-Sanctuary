@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const TestimonialCard = ({ testimonial }) => {
   const { customer_name, designation, image_url } = testimonial;
   return (
@@ -36,6 +38,10 @@ const TestimonialCard = ({ testimonial }) => {
       </div>
     </div>
   );
+};
+
+TestimonialCard.propTypes = {
+  testimonial: PropTypes.object.isRequired,
 };
 
 export default TestimonialCard;

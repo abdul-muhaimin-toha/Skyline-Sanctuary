@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const SectionHeader = ({ title, subTitle }) => {
   return (
     <div>
@@ -11,6 +13,11 @@ const SectionHeader = ({ title, subTitle }) => {
       </div>
     </div>
   );
+};
+
+SectionHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+  subTitle: PropTypes.string.isRequired,
 };
 
 export default SectionHeader;

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { updateProfile } from "firebase/auth";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const SignUp = () => {
   const [isPassVisible, setIsPassVisible] = useState(false);
@@ -31,7 +31,7 @@ const SignUp = () => {
         })
           .then(() => {})
           .catch((error) => {
-            console.error(err.message);
+            console.error(error.message);
           });
         logout();
         navigate(location?.state ? location.state : "/login");
@@ -61,8 +61,7 @@ const SignUp = () => {
 
   const handleGoogleLogin = () => {
     googleLogin()
-      .then((result) => {
-        const user = result.user;
+      .then(() => {
         navigate(location?.state ? location.state : "/");
         toast("successfully logged in", {
           icon: "👏",
@@ -89,8 +88,7 @@ const SignUp = () => {
 
   const handleGithubLogin = () => {
     githubLogin()
-      .then((result) => {
-        const user = result.user;
+      .then(() => {
         navigate(location?.state ? location.state : "/");
         toast("successfully logged in", {
           icon: "👏",
@@ -117,9 +115,11 @@ const SignUp = () => {
 
   return (
     <section className=" bg-hero-slider-2 bg-cover">
-      <Helmet>
-        <title>Skyline Sactuary - Sign Up</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Skyline Sactuary - Sign Up</title>
+        </Helmet>
+      </HelmetProvider>
       <div className="bg-gradient-to-b from-[#22222283] to-[#2222226c] ">
         <div className="mx-auto max-w-screen-2xl px-6 md:px-12">
           <div className="flex min-h-[calc(100vh-305px)] items-center justify-between gap-10 py-20">

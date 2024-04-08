@@ -1,4 +1,3 @@
-import SectionHeader from "./SectionHeader";
 const NewsLetter = () => {
   return (
     <section className="bg-neutral py-16 text-white">

@@ -1,11 +1,13 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const ContactUsPage = () => {
   return (
     <section className="bg-hero-slider-5 bg-cover">
-      <Helmet>
-        <title>SkyLine Sactuary - Contact Us</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>SkyLine Sactuary - Contact Us</title>
+        </Helmet>
+      </HelmetProvider>
       <div className="bg-gradient-to-b from-[#22222283] to-[#2222226c] ">
         <div className="mx-auto max-w-screen-2xl px-6 md:px-12">
           <div className="flex min-h-[calc(100vh-305px)] items-center justify-center gap-10 py-20">

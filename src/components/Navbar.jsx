@@ -20,6 +20,7 @@ const Navbar = () => {
         });
       })
       .catch((error) => {
+        console.error(error.message);
         toast("Log out failed", {
           icon: "❌",
           style: {

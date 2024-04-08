@@ -4,7 +4,7 @@ import useAuth from "../hooks/useAuth";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const LoginPage = () => {
   const location = useLocation();
@@ -22,9 +22,7 @@ const LoginPage = () => {
   const handleFormSubmit = (data) => {
     const { email, password } = data;
     emailPassLogin(email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        console.log(user);
+      .then(() => {
         reset();
         navigate(location?.state ? location.state : "/");
 
@@ -53,8 +51,7 @@ const LoginPage = () => {
 
   const handleGoogleLogin = () => {
     googleLogin()
-      .then((result) => {
-        const user = result.user;
+      .then(() => {
         navigate(location?.state ? location.state : "/");
         toast("successfully logged in", {
           icon: "👏",
@@ -81,8 +78,7 @@ const LoginPage = () => {
 
   const handleGithubLogin = () => {
     githubLogin()
-      .then((result) => {
-        const user = result.user;
+      .then(() => {
         navigate(location?.state ? location.state : "/");
         toast("successfully logged in", {
           icon: "👏",
@@ -109,9 +105,11 @@ const LoginPage = () => {
 
   return (
     <section className="bg-hero-slider-2 bg-cover">
-      <Helmet>
-        <title>Skyline Sactuary - Log In</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Skyline Sactuary - Log In</title>
+        </Helmet>
+      </HelmetProvider>
       <div className="bg-gradient-to-b from-[#22222283] to-[#2222226c] ">
         <div className="mx-auto max-w-screen-2xl px-6 md:px-12">
           <div className="flex min-h-[calc(100vh-305px)] items-center justify-between gap-10 py-20">

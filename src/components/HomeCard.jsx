@@ -1,6 +1,7 @@
 import { IoMdPricetag, IoMdHome } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const HomeCard = ({ home }) => {
   const {
@@ -15,6 +16,7 @@ const HomeCard = ({ home }) => {
     short_description,
     status,
   } = home;
+
   return (
     <div className=" relative rounded-xl bg-slate-100 p-3 shadow-lg">
       <img
@@ -71,6 +73,10 @@ const HomeCard = ({ home }) => {
       </div>
     </div>
   );
+};
+
+HomeCard.propTypes = {
+  home: PropTypes.object.isRequired,
 };
 
 export default HomeCard;

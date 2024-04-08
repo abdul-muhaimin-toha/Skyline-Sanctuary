@@ -1,5 +1,6 @@
 import { useState } from "react";
 import HomeCard from "./HomeCard";
+import PropTypes from "prop-types";
 
 const HomeList = ({ homes }) => {
   const [viewAll, setviewAll] = useState(false);
@@ -24,6 +25,10 @@ const HomeList = ({ homes }) => {
       </div>
     </section>
   );
+};
+
+HomeList.propTypes = {
+  homes: PropTypes.array.isRequired,
 };
 
 export default HomeList;
