@@ -1,8 +1,19 @@
-# React + Vite
+# Skyline Sanctuary
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Milestone: 9, Assignment: 9 (Skyline Sanctuary). Project based assignment for Progmming Hero course.
 
-Currently, two official plugins are available:
+[Live Website Link]()  
+[Project Repository Link](https://github.com/programming-hero-web-course-4/b9a9-real-estate-abdul-muhaimin-toha)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- By browsing this website you can have information about real estate provided by the company
+- If you are registered user you can see details about each real estate property in a details page
+- This website contains mutiple pages such as Contact Us, login, registration, user profile update and others
+- Some of these pages are open for every one and some are private for registred users
+- You can get registered with your email or social media accounts
+  -This website is mobile, tablet and big screen friendly
+
+## NPM Packages used in this project
+
+- React Leaflet
+- React Hook Form
+- Swiper slider
