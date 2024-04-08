@@ -32,7 +32,11 @@ const Navbar = () => {
                 tabIndex={0}
                 className="menu dropdown-content menu-sm z-[1] mt-3 w-52 space-y-2 rounded-box bg-base-100 p-2 text-primary shadow"
               >
-                <NavLink className="transition duration-200 hover:text-blue-800">
+                <NavLink
+                  className={({ isActive }) =>
+                    `transition duration-200 hover:text-blue-800 ${isActive && "text-blue-800"}`
+                  }
+                >
                   Home
                 </NavLink>
               </ul>
@@ -52,7 +56,9 @@ const Navbar = () => {
             <ul className="menu menu-horizontal space-x-6 px-1 text-base font-bold text-primary md:space-x-8">
               <NavLink
                 to="/"
-                className="transition duration-200 hover:text-blue-800"
+                className={({ isActive }) =>
+                  `transition duration-200 hover:text-blue-800 ${isActive && "text-blue-800"}`
+                }
               >
                 Home
               </NavLink>

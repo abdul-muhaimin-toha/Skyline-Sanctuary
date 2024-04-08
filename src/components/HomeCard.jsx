@@ -1,8 +1,10 @@
 import { IoMdPricetag, IoMdHome } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const HomeCard = ({ home }) => {
   const {
+    id,
     image,
     estate_title,
     facilities,
@@ -58,9 +60,14 @@ const HomeCard = ({ home }) => {
             <p key={id}># {facility}</p>
           ))}
         </div>
-        <button className="mt-4 w-full rounded-md bg-primary p-3 text-white">
-          View Details
-        </button>
+        <div className="mt-4 flex">
+          <Link
+            to={`/propertyDetails/${id}`}
+            className=" w-full rounded-md bg-primary p-3 text-center text-white"
+          >
+            View Details
+          </Link>
+        </div>
       </div>
     </div>
   );

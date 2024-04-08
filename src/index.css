@@ -13,3 +13,7 @@ body {
   width: 8px !important;
   height: 8px !important;
 }
+
+.leaflet-container {
+  height: 70vh;
+}
