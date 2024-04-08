@@ -14,12 +14,12 @@ const FooterSection = () => {
             Home
           </NavLink>
           <NavLink
-            to="/registration"
+            to="/signup"
             className={({ isActive }) =>
               `link-hover link ${isActive && "text-primary"}`
             }
           >
-            Registration
+            Sign Up
           </NavLink>
           <NavLink
             to="/login"

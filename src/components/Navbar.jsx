@@ -60,14 +60,14 @@ const Navbar = () => {
           </div>
           <div className="navbar-end gap-3">
             <Link
-              to="/registration"
-              className="rounded-md bg-blue-700 px-5 py-3 font-bold text-white transition duration-200 hover:bg-blue-800"
+              to="/signup"
+              className="rounded-md bg-blue-700 p-3 font-bold text-white transition duration-200 hover:bg-blue-800 md:px-5 md:py-3"
             >
-              Registration
+              Sign Up
             </Link>
             <Link
               to="/login"
-              className="rounded-md bg-primary px-5 py-3 font-bold text-white transition duration-200 hover:bg-blue-800"
+              className="rounded-md bg-primary p-3 font-bold text-white transition duration-200 hover:bg-blue-800 md:px-5 md:py-3"
             >
               Login
             </Link>

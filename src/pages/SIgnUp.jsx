@@ -1,21 +1,31 @@
 import { Link } from "react-router-dom";
 import { FaEyeSlash, FaRegEyeSlash } from "react-icons/fa";
 
-const LoginPage = () => {
+const SignUp = () => {
   return (
-    <section className="bg-hero-slider-2 bg-cover">
+    <section className="bg-hero-slider-5 bg-cover">
       <div className="bg-gradient-to-b from-[#22222283] to-[#2222226c] ">
         <div className="mx-auto max-w-screen-2xl px-6 md:px-12">
           <div className="flex items-center justify-between gap-10 py-20">
             <div className="mb-4 w-full rounded bg-slate-100 bg-opacity-95 p-6 shadow-2xl md:w-2/3 md:px-12 md:py-10 lg:w-1/2">
               <h3 className="mb-8 text-4xl font-bold text-primary md:text-5xl">
-                Login Now!
+                Sign Up Now!
               </h3>
               <p></p>
               <form className="flex flex-col">
                 <input
+                  type="text"
+                  placeholder="Enter your name"
+                  className="mb-4 border p-4"
+                />
+                <input
                   type="email"
                   placeholder="Enter your email"
+                  className="mb-4 border p-4"
+                />
+                <input
+                  type="text"
+                  placeholder="Enter your photo URL"
                   className="mb-4 border p-4"
                 />
                 <div className="relative bg-red-300">
@@ -28,7 +38,7 @@ const LoginPage = () => {
                 </div>
                 <input
                   type="submit"
-                  value="Login"
+                  value="Sign Up"
                   className="mt-8 rounded-md bg-primary p-3 font-bold text-white "
                 />
               </form>
@@ -41,12 +51,9 @@ const LoginPage = () => {
                 </button>
               </div>
               <p className="mt-4 text-center font-bold">
-                New User?{" "}
-                <Link
-                  to="/signup"
-                  className="ml-2 text-primary hover:underline"
-                >
-                  Sign Up Now
+                Already have an account?{" "}
+                <Link to="/login" className="ml-2 text-primary hover:underline">
+                  Login
                 </Link>
               </p>
             </div>
@@ -57,4 +64,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default SignUp;
