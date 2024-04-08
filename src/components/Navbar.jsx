@@ -61,12 +61,33 @@ const Navbar = () => {
                 className="menu dropdown-content menu-sm z-[1] mt-3 w-52 space-y-2 rounded-box bg-base-100 p-2 text-primary shadow"
               >
                 <NavLink
+                  to="/"
                   className={({ isActive }) =>
-                    `transition duration-200 hover:text-blue-800 ${isActive && "text-blue-800"}`
+                    `hover:text-primary ${isActive ? "text-primary" : "text-black"}`
                   }
                 >
                   Home
                 </NavLink>
+                {user && (
+                  <NavLink
+                    to="/profileUpdate"
+                    className={({ isActive }) =>
+                      `hover:text-primary ${isActive ? "text-primary" : "text-black"}`
+                    }
+                  >
+                    Update Profile
+                  </NavLink>
+                )}
+                {user && (
+                  <NavLink
+                    to="/contact-us"
+                    className={({ isActive }) =>
+                      `hover:text-primary ${isActive ? "text-primary" : "text-black"}`
+                    }
+                  >
+                    Contact Us
+                  </NavLink>
+                )}
               </ul>
             </div>
             <Link
@@ -85,11 +106,31 @@ const Navbar = () => {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `transition duration-200 hover:text-blue-800 ${isActive && "text-blue-800"}`
+                  `hover:text-primary ${isActive ? "text-primary" : "text-black"}`
                 }
               >
                 Home
               </NavLink>
+              {user && (
+                <NavLink
+                  to="/profileUpdate"
+                  className={({ isActive }) =>
+                    `hover:text-primary ${isActive ? "text-primary" : "text-black"}`
+                  }
+                >
+                  Update Profile
+                </NavLink>
+              )}
+              {user && (
+                <NavLink
+                  to="/contact-us"
+                  className={({ isActive }) =>
+                    `hover:text-primary ${isActive ? "text-primary" : "text-black"}`
+                  }
+                >
+                  Contact Us
+                </NavLink>
+              )}
             </ul>
           </div>
           <div className="navbar-end">
@@ -108,8 +149,16 @@ const Navbar = () => {
                 >
                   <li>
                     <a className="font-bold text-primary hover:bg-transparent focus:bg-primary">
-                      {user.displayName}
+                      {user.displayName ? user.displayName : ""}
                     </a>
+                  </li>
+                  <li>
+                    <Link
+                      className="bg-primary font-bold  text-white hover:bg-primary hover:text-white"
+                      to="profileUpdate"
+                    >
+                      Update Profile
+                    </Link>
                   </li>
                   <li>
                     <button

@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 
 const FooterSection = () => {
+  const { user } = useAuth();
   return (
     <footer>
       <div className="footer footer-center rounded bg-base-200 p-10 text-base-content">
@@ -29,6 +31,16 @@ const FooterSection = () => {
           >
             Login
           </NavLink>
+          {user && (
+            <NavLink
+              to="/contact-us"
+              className={({ isActive }) =>
+                `hover:text-primary ${isActive ? "text-primary" : "text-black"}`
+              }
+            >
+              Contact Us
+            </NavLink>
+          )}
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">

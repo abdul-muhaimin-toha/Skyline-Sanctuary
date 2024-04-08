@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { FaEyeSlash, FaEye } from "react-icons/fa";
 import useAuth from "../hooks/useAuth";
 import { useState } from "react";
@@ -8,6 +8,8 @@ import { updateProfile } from "firebase/auth";
 
 const SignUp = () => {
   const [isPassVisible, setIsPassVisible] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
   const {
     register,
     handleSubmit,
@@ -15,7 +17,7 @@ const SignUp = () => {
     reset,
   } = useForm();
 
-  const { createNewUser, googleLogin, githubLogin } = useAuth();
+  const { logout, createNewUser, googleLogin, githubLogin } = useAuth();
 
   const handleFormSubmit = (data) => {
     const { name, email, photoURL, password } = data;
@@ -30,6 +32,8 @@ const SignUp = () => {
           .catch((error) => {
             console.error(err.message);
           });
+        logout();
+        navigate(location?.state ? location.state : "/login");
         reset();
         toast("Profile Created successfully", {
           icon: "👏",
@@ -58,11 +62,27 @@ const SignUp = () => {
     googleLogin()
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        navigate(location?.state ? location.state : "/");
+        toast("successfully logged in", {
+          icon: "👏",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
       })
       .catch((error) => {
         const errorMessage = error.message;
         console.error(errorMessage);
+        toast("Login with google failed! try again!", {
+          icon: "❌",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
       });
   };
 
@@ -70,19 +90,35 @@ const SignUp = () => {
     githubLogin()
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        navigate(location?.state ? location.state : "/");
+        toast("successfully logged in", {
+          icon: "👏",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
       })
       .catch((error) => {
         const errorMessage = error.message;
         console.error(errorMessage);
+        toast("Login with github failed! try again!", {
+          icon: "❌",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
       });
   };
 
   return (
-    <section className="bg-hero-slider-2 bg-cover">
+    <section className=" bg-hero-slider-2 bg-cover">
       <div className="bg-gradient-to-b from-[#22222283] to-[#2222226c] ">
         <div className="mx-auto max-w-screen-2xl px-6 md:px-12">
-          <div className="flex items-center justify-between gap-10 py-20">
+          <div className="flex min-h-[calc(100vh-305px)] items-center justify-between gap-10 py-20">
             <div className="mb-4 w-full rounded bg-slate-100 bg-opacity-95 p-6 shadow-2xl md:w-2/3 md:px-12 md:py-10 lg:w-1/2">
               <h3 className="mb-8 text-4xl font-bold text-primary md:text-5xl">
                 Sign Up Now!

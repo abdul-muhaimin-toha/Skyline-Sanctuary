@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination, Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -60,9 +61,12 @@ const HeroSection = () => {
             and we're committed to helping you find the right home for your
             needs and budget.
           </p>
-          <button className="self-center rounded-md bg-primary px-5 py-3 font-bold text-white transition duration-200 hover:bg-blue-800">
+          <Link
+            to="/contact-us"
+            className="self-center rounded-md bg-primary px-5 py-3 font-bold text-white transition duration-200 hover:bg-blue-800"
+          >
             Contact Us
-          </button>
+          </Link>
         </div>
       </div>
     </section>

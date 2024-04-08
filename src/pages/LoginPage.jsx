@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaEyeSlash, FaEye } from "react-icons/fa";
 import useAuth from "../hooks/useAuth";
 import { useState } from "react";
@@ -6,6 +6,8 @@ import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 
 const LoginPage = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
   const [isPassVisible, setIsPassVisible] = useState(false);
   const {
     register,
@@ -23,6 +25,8 @@ const LoginPage = () => {
         const user = userCredential.user;
         console.log(user);
         reset();
+        navigate(location?.state ? location.state : "/");
+
         toast("successfully logged in", {
           icon: "👏",
           style: {
@@ -50,6 +54,7 @@ const LoginPage = () => {
     googleLogin()
       .then((result) => {
         const user = result.user;
+        navigate(location?.state ? location.state : "/");
         toast("successfully logged in", {
           icon: "👏",
           style: {
@@ -77,6 +82,7 @@ const LoginPage = () => {
     githubLogin()
       .then((result) => {
         const user = result.user;
+        navigate(location?.state ? location.state : "/");
         toast("successfully logged in", {
           icon: "👏",
           style: {
@@ -104,7 +110,7 @@ const LoginPage = () => {
     <section className="bg-hero-slider-2 bg-cover">
       <div className="bg-gradient-to-b from-[#22222283] to-[#2222226c] ">
         <div className="mx-auto max-w-screen-2xl px-6 md:px-12">
-          <div className="flex items-center justify-between gap-10 py-20">
+          <div className="flex min-h-[calc(100vh-305px)] items-center justify-between gap-10 py-20">
             <div className="mb-4 w-full rounded bg-slate-100 bg-opacity-95 p-6 shadow-2xl md:w-2/3 md:px-12 md:py-10 lg:w-1/2">
               <h3 className="mb-8 text-4xl font-bold text-primary md:text-5xl">
                 Login Now!
