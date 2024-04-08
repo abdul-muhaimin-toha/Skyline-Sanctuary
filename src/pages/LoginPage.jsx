@@ -2,12 +2,41 @@ import { Link } from "react-router-dom";
 import { FaEyeSlash, FaEye } from "react-icons/fa";
 import useAuth from "../hooks/useAuth";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 
 const LoginPage = () => {
   const [isPassVisible, setIsPassVisible] = useState(false);
-  const { googleLogin, githubLogin } = useAuth();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
 
-  const handleFormSubmit = () => {};
+  const { emailPassLogin, googleLogin, githubLogin } = useAuth();
+
+  const handleFormSubmit = (data) => {
+    const { email, password } = data;
+    emailPassLogin(email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        console.log(user);
+        reset();
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.error(errorMessage);
+        toast("Email and password doesn't matched", {
+          icon: "❌",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
+      });
+  };
 
   const handleGoogleLogin = () => {
     googleLogin()
@@ -43,29 +72,54 @@ const LoginPage = () => {
                 Login Now!
               </h3>
               <p></p>
-              <form onSubmit={handleFormSubmit} className="flex flex-col">
+              <form
+                onSubmit={handleSubmit(handleFormSubmit)}
+                className="flex flex-col"
+              >
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="mb-4 border p-4"
+                  className=" border p-4"
+                  {...register("email", {
+                    required: {
+                      value: true,
+                      message: "You must fill email field",
+                    },
+                  })}
                 />
-                <div className="relative bg-red-300">
+                {errors.email && (
+                  <p className="px-1 pt-2 text-sm text-red-500">
+                    {errors.email.message}
+                  </p>
+                )}
+                <div className="relative">
                   <input
                     type={isPassVisible ? "text" : "password"}
                     placeholder="Enter your password"
-                    className=" w-full border p-4"
+                    className="mt-4 w-full border p-4"
+                    {...register("password", {
+                      required: {
+                        value: true,
+                        message: "You must fill password field",
+                      },
+                    })}
                   />
                   <p
                     className="cursor-pointer"
                     onClick={() => setIsPassVisible(!isPassVisible)}
                   >
                     {isPassVisible ? (
-                      <FaEyeSlash className="absolute right-5 top-1/2 -translate-y-1/2  text-2xl text-primary" />
+                      <FaEyeSlash className="absolute right-5 top-2/3 -translate-y-1/2  text-2xl text-primary" />
                     ) : (
-                      <FaEye className="absolute right-5 top-1/2 -translate-y-1/2  text-2xl text-primary" />
+                      <FaEye className="absolute right-5 top-2/3 -translate-y-1/2  text-2xl text-primary" />
                     )}
                   </p>
                 </div>
+                {errors.password && (
+                  <p className="px-1 pt-2 text-sm text-red-500">
+                    {errors.password.message}
+                  </p>
+                )}
                 <input
                   type="submit"
                   value="Login"
