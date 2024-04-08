@@ -1,4 +1,5 @@
 import HeroSection from "../components/HeroSection";
+import NewsLetter from "../components/NewsLetter";
 import SingleFamilyHomeSection from "../components/SingleFamilyHomeSection";
 import { useLoaderData } from "react-router-dom";
 
@@ -8,6 +9,7 @@ const HomePage = () => {
     <>
       <HeroSection />
       <SingleFamilyHomeSection homes={homes} />
+      <NewsLetter />
     </>
   );
 };

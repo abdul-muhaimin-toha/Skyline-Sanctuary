@@ -5,8 +5,8 @@ const SingleFamilyHomeSection = ({ homes }) => {
   return (
     <section>
       <SectionHeader
-        title="Family Homes"
-        subTitle="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quis.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quis."
+        title="Explore Our Property"
+        subTitle="Unlock the Door to Your Dream Home: Explore Our Premier Real Estate Listings Today and Start Your Journey to Homeownership"
       />
       <HomeList homes={homes} />
     </section>

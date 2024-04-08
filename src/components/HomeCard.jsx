@@ -21,9 +21,6 @@ const HomeCard = ({ home }) => {
         className="h-48 w-full rounded-t-xl object-cover"
       />
       <div className="absolute right-0 top-2 flex w-full justify-between shadow-xl">
-        <p className="absolute left-6 top-5 min-w-20 rounded-full bg-primary px-3 py-1 text-center text-sm font-bold text-white">
-          {status}
-        </p>
         <p className="absolute right-6 top-5 min-w-32 rounded-full bg-primary px-3 py-1 text-center text-sm font-bold text-white">
           {segment_name}
         </p>
@@ -33,26 +30,26 @@ const HomeCard = ({ home }) => {
         <p className="text-sm font-semibold">{short_description}</p>
         <div className="mt-4 flex">
           <p className="rounded-full bg-secondary px-3 py-1 text-base text-white">
-            Status: <span className="ml-2 font-bold">Sale</span>
+            Status: <span className="ml-2 font-bold">{status}</span>
           </p>
         </div>
         <div className="mt-4 flex flex-wrap items-center justify-between gap-2 border-t pt-2">
           <div className="flex items-center gap-2">
-            <p className="flex items-center gap-1 text-lg font-bold text-secondary">
+            <p className="flex items-center gap-1 text-base font-bold text-secondary">
               <IoMdPricetag />
               Price:
             </p>
-            <p className="text-lg font-bold text-primary">$ {price}</p>
+            <p className="text-base font-bold text-primary">$ {price}</p>
           </div>
           <div className="flex items-center gap-2">
-            <p className="flex items-center gap-1 text-lg font-bold text-secondary">
+            <p className="flex items-center gap-1 text-base font-bold text-secondary">
               <IoMdHome />
               Area:
             </p>
-            <p className="text-lg font-bold text-primary">{area} sq ft</p>
+            <p className="text-base font-bold text-primary">{area} sq ft</p>
           </div>
         </div>
-        <div className="mt-4 flex items-center gap-1 text-lg font-bold text-primary">
+        <div className="mt-4 flex items-center gap-1 text-base font-bold text-primary">
           <FaLocationDot className="text-secondary" />
           <p>{location}</p>
         </div>
