@@ -1,4 +1,3 @@
-import "leaflet/dist/leaflet.css";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import { IoMdPricetag, IoMdHome } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
