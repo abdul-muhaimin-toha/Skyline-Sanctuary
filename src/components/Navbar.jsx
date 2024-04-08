@@ -1,7 +1,35 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/website-logo.png";
+import useAuth from "../hooks/useAuth";
+import userDefault from "../assets/user-default.jpg";
+import toast from "react-hot-toast";
 
 const Navbar = () => {
+  const { user, logout } = useAuth();
+
+  const handleLogOut = () => {
+    logout()
+      .then(() => {
+        toast("Successfully log out", {
+          icon: "👏",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
+      })
+      .catch((error) => {
+        toast("Log out failed", {
+          icon: "❌",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
+      });
+  };
   return (
     <nav className="sticky left-0 top-0 z-50 bg-white  p-2">
       <div className="mx-auto max-w-screen-2xl">
@@ -64,19 +92,51 @@ const Navbar = () => {
               </NavLink>
             </ul>
           </div>
-          <div className="navbar-end gap-3">
-            <Link
-              to="/signup"
-              className="rounded-md bg-blue-700 p-3 font-bold text-white transition duration-200 hover:bg-blue-800 md:px-5 md:py-3"
-            >
-              Sign Up
-            </Link>
-            <Link
-              to="/login"
-              className="rounded-md bg-primary p-3 font-bold text-white transition duration-200 hover:bg-blue-800 md:px-5 md:py-3"
-            >
-              Login
-            </Link>
+          <div className="navbar-end">
+            {user ? (
+              <div className=" dropdown dropdown-end rounded-full outline outline-4 outline-primary">
+                <img
+                  tabIndex={0}
+                  role="button"
+                  src={user.photoURL ? user.photoURL : userDefault}
+                  alt=""
+                  className="h-8 w-8 cursor-pointer rounded-full bg-secondary "
+                />
+                <ul
+                  tabIndex={0}
+                  className="menu dropdown-content z-[1] mt-6 w-52 space-y-2 rounded-box bg-base-100 p-2 shadow "
+                >
+                  <li>
+                    <a className="font-bold text-primary hover:bg-transparent focus:bg-primary">
+                      {user.displayName}
+                    </a>
+                  </li>
+                  <li>
+                    <button
+                      onClick={handleLogOut}
+                      className="bg-primary font-bold  text-white hover:bg-primary hover:text-white"
+                    >
+                      Log out
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            ) : (
+              <div className="flex gap-3">
+                <Link
+                  to="/signup"
+                  className="rounded-md bg-blue-700 p-3 font-bold text-white transition duration-200 hover:bg-blue-800 md:px-5 md:py-3"
+                >
+                  Sign Up
+                </Link>
+                <Link
+                  to="/login"
+                  className="rounded-md bg-primary p-3 font-bold text-white transition duration-200 hover:bg-blue-800 md:px-5 md:py-3"
+                >
+                  Login
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       </div>

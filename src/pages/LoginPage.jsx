@@ -23,6 +23,14 @@ const LoginPage = () => {
         const user = userCredential.user;
         console.log(user);
         reset();
+        toast("successfully logged in", {
+          icon: "👏",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
       })
       .catch((error) => {
         const errorMessage = error.message;
@@ -42,11 +50,26 @@ const LoginPage = () => {
     googleLogin()
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        toast("successfully logged in", {
+          icon: "👏",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
       })
       .catch((error) => {
         const errorMessage = error.message;
         console.error(errorMessage);
+        toast("Google sign in failed", {
+          icon: "❌",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
       });
   };
 
@@ -54,11 +77,26 @@ const LoginPage = () => {
     githubLogin()
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        toast("successfully logged in", {
+          icon: "👏",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
       })
       .catch((error) => {
         const errorMessage = error.message;
         console.error(errorMessage);
+        toast("Github sign in failed", {
+          icon: "❌",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
       });
   };
 
